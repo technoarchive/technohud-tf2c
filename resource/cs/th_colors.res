@@ -5,7 +5,7 @@ Scheme {
 		"Orange"			"178 82 22 255"
 		"OrangeDim"			"178 82 22 120"
 		"LightOrange"		"188 112 0 128"
-		"GoalOrange"		"255 133 0"
+		"GoalOrange"		"255 133 0 255"
 		"TFOrange"			"145 73 59 255"
 		"Purple"			"137 69 99 255"
 
@@ -248,9 +248,9 @@ Scheme {
 		CheckButton.TextColor			"Yellow"
 		CheckButton.SelectedTextColor	"Yellow"
 		CheckButton.BgColor				"TransparentBlack"
-		CheckButton.Border1  			"Yellow" 		// the left checkbutton border
-		CheckButton.Border2  			"Yellow"		// the right checkbutton border
-		CheckButton.Check				"Yellow"		// color of the check itself
+		CheckButton.Border1  			"Yellow" 	// the left checkbutton border
+		CheckButton.Border2  			"Yellow" 	// the right checkbutton border
+		CheckButton.Check				"Yellow" 	// color of the check itself
 		CheckButton.HighlightFgColor	"Yellow"
 
 		ComboBoxButton.ArrowColor		"TanLight"
@@ -260,10 +260,8 @@ Scheme {
 
 		Frame.BgColor					"TransparentBlack"
 		Frame.OutOfFocusBgColor			"TransparentBlack"
-		Frame.FocusTransitionEffectTime	"0.0"	[$WIN32] // time it takes for a window to fade in/out on focus/out of focus
-		Frame.TransitionEffectTime		"0.0"	[$WIN32] // time it takes for a window to fade in/out on open/close
-		Frame.FocusTransitionEffectTime	"0.15"	[$X360] // time it takes for a window to fade in/out on focus/out of focus
-		Frame.TransitionEffectTime		"0.15"	[$X360] // time it takes for a window to fade in/out on open/close
+		Frame.FocusTransitionEffectTime	"0.0"  // time it takes for a window to fade in/out on focus/out of focus
+		Frame.TransitionEffectTime		"0.0"  // time it takes for a window to fade in/out on open/close
 		Frame.AutoSnapRange				"0"
 		FrameGrip.Color1				"Blank"
 		FrameGrip.Color2				"Blank"
@@ -323,7 +321,7 @@ Scheme {
 
 		PropertySheet.TextColor			"Orange"
 		PropertySheet.SelectedTextColor	"Orange"
-		PropertySheet.TransitionEffectTime	"0.25"	// time to change from one tab to another
+		PropertySheet.TransitionEffectTime	"0.0"	// time to change from one tab to another
 
 		RadioButton.TextColor			"Orange"
 		RadioButton.SelectedTextColor	"Orange"

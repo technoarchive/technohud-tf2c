@@ -146,5 +146,25 @@
 			"font"	"resource/fonts/xolonium.otf"
 			"name"	"Xolonium GPL"
 		}
+		"13"
+		{
+			"font"	"resource/fonts/surface.otf"
+			"name"	"Surface-Medium"
+		}
+		"14"
+		{
+			"font"	"resource/fonts/nukamiso.ttf"
+			"name"	"nukamiso"
+		}
+		"15"
+		{
+			"font" "resource/fonts/catamaran.ttf"
+			"name" "Catamaran SemiBold"
+		}
+		"500"
+		{
+			"font"	"resource/fonts/blocks.ttf"
+			"name"	"Blocks"
+		}
 	}
 }

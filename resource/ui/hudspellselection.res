@@ -2,7 +2,8 @@
 {
 	HudSpellMenu
 	{
-		"xpos"			"c250"
+		"xpos"			"c120"
+		"ypos"			"c145"
 	}
 
 	"ItemEffectMeterBG"

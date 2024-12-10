@@ -76,6 +76,9 @@ Scheme
 		PropertySheet.TextColor			"G_ButtonText"
 		PropertySheet.SelectedTextColor	"G_ButtonText"
 		
+		// time to change from one tab to another (causes some stutters in community server selection when switching? need to test more -techno)
+		PropertySheet.TransitionEffectTime	"0.0"	
+
 		// Console background
 		RichText.BgColor				"G_ConsoleBg"
 		
@@ -192,7 +195,7 @@ Scheme
                 "tall"         	"10"  				// good positioning is ... 'net_graphpos 183' and 'net_graphheight 30' and ensure you select 'antialias'  '1' with all others off with 'Georgia' font.
                 "weight"     	"0"  				// This is the thickness, like a bold setting max is about 700. Small fonts will look better as '0'.
                 "range"         "0x0000 0x017F" 	//    Basic Latin, Latin-1 Supplement, Latin Extended-A
-                "outline"     	"0"  				//Adds a black outline around the text, good for standing out... that is, if the font allows it, use with caution on smaller fonts.
+                "outline"     	"1"  				//Adds a black outline around the text, good for standing out... that is, if the font allows it, use with caution on smaller fonts.
                 "additive"		"0"  				//not default added //This adds white to font...sort of a glow effect on coloured fonts and gives a washed out pastel look
                 "antialias"		"1"  				//not default added //smoothing the edges.                
             }

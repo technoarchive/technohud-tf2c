@@ -44,7 +44,7 @@
 		// CROSSHAIR COLOR
 		//-------------------------------------------------------------------------
 		// The color is a R. (red) G. (green) B. (blu) A. (alpha) code
-		// Edit the color in customization/colors.res to get the color you want
+		// Adjust each value to get the desired color
 		//=========================================================================
 		
 		"fgcolor"	"CrosshairColor"

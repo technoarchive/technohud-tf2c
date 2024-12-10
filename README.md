@@ -10,6 +10,6 @@ a clean hud made (mostly) from scratch with darker neutral colors as a theme.
 
 but this time i ported it to tf2 classic
 
-currently based on [0.43B](https://github.com/tekunotri/technohud/releases/tag/0.43.2)
+currently based on [0.50](https://github.com/tekunotri/technohud/releases/tag/0.50.1)
 
 [**credits, elements used and thanks**](https://github.com/TechnoSL/technohud/wiki/Credits)

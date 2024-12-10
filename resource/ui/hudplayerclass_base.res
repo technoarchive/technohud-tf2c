@@ -283,6 +283,16 @@
 				"origin_y"							"12"	// Move Left-Right
 				"origin_z"							"-78"	// Move Up-Down
 			}
+			"Civilian"
+			{
+				"fov"								"40"
+				"angles_x"							"-12"
+				"angles_y"							"200"
+				"angles_z"							"0"
+				"origin_x"							"130"
+				"origin_y"							"12"
+				"origin_z"							"-78"
+			}
 		}
 	}
 

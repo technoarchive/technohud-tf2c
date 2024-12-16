@@ -376,13 +376,23 @@
 		"zpos"			"4"
 		"wide"			"62"
 		"tall"			"25"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"%greenscore%"
 		"textAlignment"	"center"
 		"font"			"HudFontMediumBold"
 		"fgcolor"		"Black"
 		"pin_to_sibling" "ScoreGreenLabel"
+		
+		"if_dom_4team"
+		{
+			"visible"		"1"
+		}
+		"if_generic_4team"
+		{
+			"visible"		"1"
+			"xpos"			"c12"
+		}
 	}
 
 	"ScoreGreenMultLabel"
@@ -441,13 +451,23 @@
 		"zpos"			"4"
 		"wide"			"62"
 		"tall"			"25"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"%yellowscore%"
 		"textAlignment"	"center"
 		"font"			"HudFontMediumBold"
 		"fgcolor"		"Black"
 		"pin_to_sibling" "ScoreYellowLabel"
+		
+		"if_dom_4team"
+		{
+			"visible"		"1"
+		}
+		"if_generic_4team"
+		{
+			"visible"		"1"
+			"xpos"			"c12"
+		}
 	}
 
 	"ScoreYellowMultLabel"

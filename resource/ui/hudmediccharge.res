@@ -11,12 +11,15 @@
 		"fieldName"									"UberAnchor"
 		"xpos"										"c150"
 		"ypos"										"c95"
+		"xpos_minmode"								"c95"
+		"ypos_minmode"								"c3"
 		"zpos"										"0"
 		"wide"										"2"
 		"tall"										"80"
 		"visible"									"0"
 		"enabled"									"1"
 		"alpha"										"0"
+		
 	}
 
 	//==================================================================================================================================================
@@ -31,7 +34,7 @@
 		"zpos"										"2"
 		"wide"										"100"
 		"tall"										"20"
-		"visible"									"1"
+		"visible"									"0"
 		"enabled"									"1"
 		"proportionaltoparent"						"1"
 		"labelText"									"#TF_UberchargeMinHUD"
@@ -59,6 +62,7 @@
 		"labelText"									"#TF_UberchargeMinHUD"
 		"textAlignment"								"center"
 		"font"										"HudFont52Bold"
+		"font_minmode"								"HudFont36Bold"
 		"fgcolor"									"THUber"
 
 		"pin_to_sibling"							"UberAnchor"
@@ -80,6 +84,7 @@
 		"labelText"									"#TF_UberchargeMinHUD"
 		"textAlignment"								"center"
 		"font"										"HudFont52Bold"
+		"font_minmode"								"HudFont36Bold"
 		"fgcolor"									"Black"
 
 		"pin_to_sibling"							"ChargeLabelBig"
@@ -99,6 +104,7 @@
 		"labelText"									"#TF_UberchargeMinHUD"
 		"textAlignment"								"center"
 		"font"										"HudFont52Bold"
+		"font_minmode"								"HudFont36Bold"
 		"fgcolor"									"Black"
 		"alpha"										"0"
 

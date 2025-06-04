@@ -103,7 +103,7 @@
 		"teambg_3_lodef"	"../hud/character_blue_bg_lodef_clipped"
 	}
 
-	"ClassModelPanel"
+"ClassModelPanel"
 	{
 		"ControlName"								"CTFPlayerModelPanel"
 		"fieldName"									"ClassModelPanel"
@@ -135,58 +135,6 @@
 			"spotlight"								"1"
 
 			"modelname"								""
-			
-			"animation"
-			{
-				"name"		"PRIMARY"
-				"activity"	"ACT_MP_STAND_PRIMARY"
-				"default"	"1"
-			}
-			"animation"
-			{
-				"name"		"SECONDARY"
-				"activity"	"ACT_MP_STAND_SECONDARY"
-			}
-			"animation"
-			{
-				"name"		"MELEE"
-				"activity"	"ACT_MP_STAND_MELEE"
-			}
-			"animation"
-			{
-				"name"		"BUILDING"
-				"activity"	"ACT_MP_STAND_BUILDING"
-			}
-			"animation"
-			{
-				"name"		"PDA"
-				"activity"	"ACT_MP_STAND_PDA"
-			}
-			"animation"
-			{
-				"name"		"ITEM1"
-				"activity"	"ACT_MP_STAND_ITEM1"
-			}
-			"animation"
-			{
-				"name"		"ITEM2"
-				"activity"	"ACT_MP_STAND_ITEM2"
-			}
-			"animation"
-			{
-				"name"		"MELEE_ALLCLASS"
-				"activity"	"ACT_MP_STAND_MELEE_ALLCLASS"
-			}
-			"animation"
-			{
-				"name"		"PRIMARY2"
-				"activity"	"ACT_MP_STAND_PRIMARY"
-			}
-			"animation"
-			{
-				"name"		"SECONDARY2"
-				"activity"	"ACT_MP_STAND_SECONDARY2"
-			}
 		}
 		"CustomClassData"
 		{
@@ -283,16 +231,6 @@
 				"origin_y"							"12"	// Move Left-Right
 				"origin_z"							"-78"	// Move Up-Down
 			}
-			"Civilian"
-			{
-				"fov"								"40"
-				"angles_x"							"-12"
-				"angles_y"							"200"
-				"angles_z"							"0"
-				"origin_x"							"130"
-				"origin_y"							"12"
-				"origin_z"							"-78"
-			}
 		}
 	}
 
@@ -348,7 +286,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"			"CarryingLabel"
 			"font"				"HudFont11Bold"
-			"font_minmode"		"TFFontMedium"
+			"font_minmode"		"HudFont9"
 			"xpos"				"5"
 			"xpos_minmode"		"5"
 			"ypos"				"3"
@@ -375,7 +313,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"			"CarryingLabelDropShadow"
 			"font"				"HudFont11Bold"
-			"font_minmode"		"TFFontMedium"
+			"font_minmode"		"HudFont9"
 			"xpos"				"p0.011"
 			"xpos_minmode"		"6"
 			"ypos"				"p0.12"

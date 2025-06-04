@@ -1,5 +1,3 @@
-//TODO: either m0rehud joke minmode or something small and centered kbnhud/m0re minmode inspired?
-//TODO2: clean this file up to be slightly easier to mangle?
 "Resource/UI/HudPlayerHealth.res"
 {
 	// player health data, don't mess with this
@@ -18,21 +16,24 @@
 		"HealthDeathWarning"	"0.49"
 		"HealthDeathWarningColor"	"HUDDeathWarning"
 	}
-
 	"PlayerStatusHealthValue" // actual hp number
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
 		"xpos"			"c-212"
-		"ypos"			"c115"	
+		"ypos"			"c113"
+		//minmode
+		"xpos_minmode"	"c-172"
+		"ypos_minmode"	"c23"
 		"zpos"			"5"
 		"wide"			"150"
-		"tall"			"36"
+		"tall"			"40"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"
 		"font"			"HudFont52Bold"
+		"font_minmode"	"HudFont36Bold"
 		"fgcolor"		"HealthNumbers"
 	}
 	"PlayerStatusHealthValue_Shadow" // actual hp number shadow
@@ -43,12 +44,13 @@
 		"ypos"			"-1"	
 		"zpos"			"5"
 		"wide"			"150"
-		"tall"			"36"
+		"tall"			"40"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"
 		"font"			"HudFont52Bold"
+		"font_minmode"	"HudFont36Bold"
 		"fgcolor"		"Black"
 		"pin_to_sibling" "PlayerStatusHealthValue"
 	}
@@ -57,13 +59,17 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthBonusImage"
 		"xpos"			"c-165"	
-		"ypos"			"c106"	
+		"ypos"			"c107"	
+		"xpos_minmode"	"c-112"
+		"ypos_minmode"	"c29"
 		"zpos"			"2"
 		"wide"			"55"	
-		"tall"			"55"	
+		"tall"			"55"
+		"wide_minmode"	"31"	
+		"tall_minmode"	"31"			
 		"visible"		"0"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/health_over_bg_green"
+		"image"			"replay/thumbnails/overhealcolor/health_over_bg_green"
 		"scaleImage"	"1"
 	}
 	"PlayerStatusMaxHealthValue" // max hp value, shows up above to the right,
@@ -666,42 +672,8 @@
 		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
 	}
 
-	"PlayerStatusCivilianBuff"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"PlayerStatusCivilianBuff"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"7"
-		"wide"			"30"
-		"tall"			"30"
-		"visible"		"1"
-		"enabled"		"1"
-		"scaleImage"	"1"	
-		"image"			"../HUD/civilian_buff_blue"
-		"fgcolor"		"TanDark"
-		"pin_to_sibling"	"PlayerStatusAnchor"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
 
-	}
-	"PlayerStatusDurationValue"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"PlayerStatusDurationValue"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"9"
-		"wide"			"50"
-		"tall"			"18"
-		"visible"		"0"
-		"enabled"		"1"
-		"labelText"		"Shouldnt see this!"
-		"textAlignment"	"center"	
-		"font"			"HudFontSmall"
-		"pin_to_sibling"	"PlayerStatusAnchor"
-	}
-	
+
 	//==================================================================================================================================================
 	// REMOVED ELEMENTS
 	//==================================================================================================================================================

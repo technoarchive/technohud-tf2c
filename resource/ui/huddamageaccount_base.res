@@ -1,13 +1,28 @@
-"resource/ui/huddamageaccount_last.res"
-{  
-    "DamageAccountValue"
+"Resource/UI/HudDamageAccount.res"
+{
+	"CDamageAccountPanel"
+	{
+		"fieldName"									"CDamageAccountPanel"
+		"text_x"									"0"
+		"text_y"									"0"
+		"delta_item_end_y"							"0"
+		"PositiveColor"								"TH_LastDamage"
+		"EventColor"            					"TH_UberDrop" 
+		"delta_lifetime"							"1.5"
+		"delta_item_font"							"HudFont24Shadow"
+		"delta_item_font_big"						"HudFont24Shadow"
+	}
+	 "DamageAccountValue"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"DamageAccountValue"
 		"xpos"										"c80"
 		"ypos"										"r155"
+		"xpos_minmode"								"c52"
+		"ypos_minmode"								"r235"										
 		"zpos"										"2"
 		"wide"										"150"
+		"wide_minmode"								"100"
 		"tall"										"25"
 		"visible"									"1"
 		"enabled"									"1"
@@ -16,6 +31,7 @@
 		"textAlignment"								"center"
 		"fgcolor"									"TH_LastDamage"
 		"font"										"HudFont24Bold"
+		"font_minmode"								"HudFont16Bold"
 	}
 	"DamageAccountValueShadow"
 	{
@@ -25,6 +41,7 @@
 		"ypos"										"-1"
 		"zpos"										"1"
 		"wide"										"150"
+		"wide_minmode"								"100"
 		"tall"										"25"
 		"visible"									"1"
 		"enabled"									"1"
@@ -33,6 +50,7 @@
 		"textAlignment"								"center"
 		"fgcolor"									"Black"
 		"font"										"HudFont24Bold"
+		"font_minmode"								"HudFont16Bold"
 		"pin_to_sibling"							"DamageAccountValue"
 	}
 }

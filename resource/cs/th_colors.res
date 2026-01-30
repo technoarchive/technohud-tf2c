@@ -1,7 +1,14 @@
 // color shit
 Scheme {
     Colors {
-		 //==========================================================
+
+		//tf2c specific
+		"TH_YellowTF2C"				"255 206 124 255"
+		"TH_YellowTF2C_Transparent"	"255 206 124 228"
+		"TH_GreenTF2C"					"87 192 139 255"
+		"TH_GreenTF2C_Transparent"		"87 192 139 228"
+
+		//==========================================================
 		//hp/ammo/main color stuff i cant organize shit properly whatever
 		//==========================================================
 

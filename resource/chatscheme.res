@@ -10,6 +10,7 @@
 		"TransparentBlack"									"0 0 0 128"
 		"Black"												"0 0 0 255"
 		"Green"												"63 185 73 255"
+		"TH_YellowTF2C"										"255 206 124 255"
 
 		"Blank"												"0 0 0 0"
 	}

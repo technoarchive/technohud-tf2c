@@ -66,4 +66,16 @@
 		"disabledfgfgcolor2_override"		"Black"	
 		"font"					"HudFont6"
 	}
+	"ItemEffectMeterCount"
+	{
+		"ControlName"			"Label"
+		"fieldName"				"ItemEffectMeterCount"	
+		"visible"				"0"
+		"enabled"				"0"
+		"labelText"				"%progresscount%"
+		"textAlignment"			"north"
+		"font"					"HudFontMedium"
+		"dropshadow"			"1"
+	}
+
 }

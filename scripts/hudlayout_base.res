@@ -20,6 +20,12 @@
 		"ypos"	"0"	 // r125
 		"wide"	"f0"
 		"tall"	"f0"
+
+		"x_offset_mediccharge"	"15"
+		"x_offset_mediccharge_mimode"	"0"
+		"y_offset_mediccharge"	"-40"
+		"y_offset_mediccharge_minmode"	"-27"
+
 	}
 
 	HudObjectiveStatus
@@ -516,7 +522,8 @@
 		"IconColor"		"255 255 255 255"
 		"LocalPlayerColor"	"Black"
 		"BaseBackgroundColor"	"TransparentBlack"		
-		"LocalBackgroundColor"	"255 255 255 220"	
+		"LocalBackgroundColor"	"255 255 255 220"
+
 	}
 
 	HudVehicle

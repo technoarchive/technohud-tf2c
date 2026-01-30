@@ -406,6 +406,68 @@ Scheme
 			"draw_corner_width"		"0"
 			"draw_corner_height"	"0"
 		}
+		//tf2c
+		TFFatLineBorderGreenBG
+		{
+			"bordertype"			"scalable_image"
+			"color"					"TH_GreenTF2C"
+			"image"					"white"
+			"src_corner_height"		"16"
+			"src_corner_width"		"16"
+			"draw_corner_width"		"0"
+			"draw_corner_height"	"0"
+		}
+		TFFatLineBorderGreenBGMoreOpaque
+		{
+			"bordertype"			"scalable_image"
+			"color"					"TH_GreenTF2C_Transparent"
+			"image"					"white"
+			"src_corner_height"		"16"
+			"src_corner_width"		"16"
+			"draw_corner_width"		"0"
+			"draw_corner_height"	"0"
+		}
+		TFFatLineBorderGreenBGOpaque
+		{
+			"bordertype"			"scalable_image"
+			"color"					"TH_GreenTF2C"
+			"image"					"white"
+			"src_corner_height"		"16"
+			"src_corner_width"		"16"
+			"draw_corner_width"		"0"
+			"draw_corner_height"	"0"
+		}
+		TFFatLineBorderYellowBG
+		{
+			"bordertype"			"scalable_image"
+			"color"					"TH_YellowTF2C"
+			"image"					"white"
+			"src_corner_height"		"16"
+			"src_corner_width"		"16"
+			"draw_corner_width"		"0"
+			"draw_corner_height"	"0"
+		}
+		TFFatLineBorderYellowBGMoreOpaque
+		{
+			"bordertype"			"scalable_image"
+			"color"					"TH_YellowTF2C_Transparent"
+			"image"					"white"
+			"src_corner_height"		"16"
+			"src_corner_width"		"16"
+			"draw_corner_width"		"0"
+			"draw_corner_height"	"0"
+		}
+		TFFatLineBorderYellowBGOpaque
+		{
+			"bordertype"			"scalable_image"
+			"color"					"TH_YellowTF2C"
+			"image"					"white"
+			"src_corner_height"		"16"
+			"src_corner_width"		"16"
+			"draw_corner_width"		"0"
+			"draw_corner_height"	"0"
+		}
+		//tf2c specific end
 		TFFatLineBorderClearBG
 		{
 			"Left"		{ "1" { "color" "White" } "2" { "color" "White" } }

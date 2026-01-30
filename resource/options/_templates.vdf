@@ -1,0 +1,67 @@
+"Options"
+{
+    // options we reuse a lot
+    "bases"
+    {
+        "LowToHigh"
+        {
+            "dataType"  "list"
+            "list"
+            {
+                "0"     "#gameui_low"
+                "1"     "#gameui_medium"
+                "2"     "#gameui_high"
+            }
+        }
+
+        "LowToUltra"
+        {
+            "dataType"  "list"
+            "list"
+            {
+                "0"     "#gameui_low"
+                "1"     "#gameui_medium"
+                "2"     "#gameui_high"
+                "3"     "#gameui_ultra"
+            }
+        }
+
+        "VeryLowToUltra"
+        {
+            "dataType"  "list"
+            "list"
+            {
+                "0"     "#gameui_verylow"
+                "1"     "#gameui_low"
+                "2"     "#gameui_medium"
+                "3"     "#gameui_high"
+                "4"     "#gameui_ultra"
+            }
+        }
+
+        "LowOrHigh"
+        {
+            "dataType"  "list"
+            "list"
+            {
+                "0"     "#gameui_low"
+                "1"     "#gameui_high"
+            }
+        }
+		
+		"BooleanChoice"
+        {
+            "dataType"  "check"
+        }
+
+        //"BooleanChoice"
+        //{
+        //    "dataType"  "list"
+        //    "list"
+        //    {
+        //        "0"     "#gameui_disabled"
+        //        "1"     "#gameui_enabled"
+        //    }
+        //}
+    }
+}

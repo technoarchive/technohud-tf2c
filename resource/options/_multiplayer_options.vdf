@@ -1,0 +1,133 @@
+"Options"
+{
+	"Groups"
+	{
+		"Multiplayer"
+		{
+			"CustomizationCategory"
+			{
+				"datatype"	"heading"
+				"description" "#TF2c_OptionCategory_CustomizationMultiplayer"
+				
+				"dependants"
+				{
+					"CrosshairOption"	"1"
+					"SprayOption"		"1"
+				}
+			}
+		
+			"CrosshairOption"
+			{
+				// Provider sets available choices and determines what the choice actually does
+				"provider"  "CrosshairOption"
+				"description"	"#GameUI_Crosshair"
+			}
+			
+			"SprayOption"
+			{
+				// Provider sets available choices and determines what the choice actually does
+				"provider"  "SprayOption"
+				"description"	"#GameUI_SpraypaintImage"
+				"tooltip"	"#GameUI_SpraypaintServerNote"
+			}
+			
+			"CommunicationCategory"
+			{
+				"datatype"	"heading"
+				"description" "#TF2c_OptionCategory_Communication"
+				
+				"dependants"
+				{
+					"cl_enable_text_chat"	"1"
+					"chat_filter_settings"	"1"
+				}
+			}
+			
+			"cl_enable_text_chat"
+			{
+				"datatype"		"check"
+				"description"	"#TF_EnableTextChat"
+				"tooltip"		"#Tooltip_EnableTextChat"
+				"convar"		"cl_enable_text_chat"
+			}
+			
+			"chat_filter_settings"
+			{
+				"datatype"		"button"
+				"description"	"#TF_ChatFilterSettings"
+				"tooltip"		"#Tooltip_ChatFilterSettings"
+				"command"		"open_chat_filter_settings"
+				"buttontext"	"#TF2c_ChatFilterSettingsButton"
+				"concommand"	"0"
+			}
+			
+			"NetworkCategory"
+			{
+				"datatype"	"heading"
+				"description" "#TF2c_OptionCategory_Network"
+				
+				"dependants"
+				{
+					"cl_downloadfilter"	"1"
+					"NetworkQuality"		"1"
+				}
+			}
+			
+			"cl_downloadfilter"
+			{
+				"datatype"		"list"
+				"description"	"#TF_DownloadFilter_Title"
+				"list"
+				{
+					"0"		"#GameUI_DownloadFilter_ALL"
+					"1"		"#GameUI_DownloadFilter_NoSounds"
+					"2"		"#GameUI_DownloadFilter_MapsOnly"
+					"3"		"#GameUI_DownloadFilter_None"
+				}
+
+				// map given choice to a particular convar or set of convars
+				"convars"
+				{
+					"cl_downloadfilter"
+					{
+						"0"	"all"
+						"1"	"nosounds"
+						"2"	"mapsonly"
+						"3"	"none"
+					}
+				}
+			}
+
+			"NetworkQuality"
+			{
+				// use existing description on how to display data
+				"base"  "LowToHigh"
+				//
+				"description"	"#TF_Network_Rate"
+				"tooltip"		"#TF_Network_Rate_Tip"
+				// map given choice to a particular convar or set of convars
+				"convars"
+				{
+					"cl_interp_ratio"
+					{
+						"0" "3:3.0"
+						"1" "2:2.0"
+						"2" "2:2.0"
+					}
+					"cl_updaterate"
+					{
+						"0" "33"
+						"1" "33"
+						"2" "66"
+					}
+					"cl_cmdrate"
+					{
+						"0" "33"
+						"1" "33"
+						"2" "66"
+					}
+				}
+			}
+		}
+	}
+}

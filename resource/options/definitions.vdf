@@ -1,0 +1,14 @@
+#base "_templates.vdf"
+#base "_video_options.vdf"
+#base "_audio_options.vdf"
+#base "_advanced_options.vdf"
+#base "_input_options.vdf"
+#base "_multiplayer_options.vdf"
+
+"Options"
+{
+	"Groups"
+	{
+
+	}
+}

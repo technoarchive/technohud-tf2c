@@ -1,7 +1,4 @@
 //tf2c specific
-#base "cs/clientscheme_tf2c.res"
-#base "cs/clientscheme_options.res"
-#base "ui/server_browser/server_browser_scheme.res"
 
 //====================================================
 // COLORS
@@ -30,4 +27,7 @@
 #base "cs/th_crosshairs.res"
 
 //load last
+#base "cs/clientscheme_tf2c.res"
+#base "cs/clientscheme_options.res"
+#base "ui/server_browser/server_browser_scheme.res"
 #base "schemes/clientscheme.res"

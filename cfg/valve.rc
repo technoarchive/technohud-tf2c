@@ -17,3 +17,6 @@ startupmenu
 
 //exec the entire customization (if this doesen't work, check for other valve.rc files!!!)
 exec th_customization.cfg
+
+//tf2c edition commands
+tf_hud_target_id_show_avatars 0

@@ -16,3 +16,5 @@
 // base file (edit this one)
 //=========================================================
 #base "hudlayout_base.res"
+
+#base "hudlayout_tf2c.res"

@@ -7,7 +7,11 @@ Scheme
 	    "TFTanBright"					"236 227 203 150"
 	    "TFTanLight"					"201 188 162 150"
 	    "TFTanMedium"					"131 121 104 150"
-	    
+		"TH_YellowTF2C"				"255 206 124 255"
+		"TH_YellowTF2C_Transparent"	"255 206 124 228"
+		"TH_GreenTF2C"					"87 192 139 255"
+		"TH_GreenTF2C_Transparent"		"87 192 139 228"
+
 	    "TFTanLightBright"				"229 223 211 90"
 	    "TFTanLightDark"				"96 90 78 90"
 	    
@@ -158,7 +162,8 @@ Scheme
 		Tooltip.TextColor								"0 0 0 196"
 		Tooltip.BgColor									"TFOrangeBright"
 
-		TFColors.ChatTextYellow							"251 235 202 255"
+		TFColors.ChatTextYellow							"TH_YellowTF2C"
+		TFColors.ChatTextGreen							"TH_GreenTF2C"
 	}
 
 	Fonts

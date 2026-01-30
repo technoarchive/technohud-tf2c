@@ -16,7 +16,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"DejaVu Sans Condensed"
+				"name"		"grisaiaedit"
 				"tall"		"20"
 				"weight"	"600"
 				"additive"	"0"
@@ -29,7 +29,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"DejaVu Sans Condensed"
+				"name"		"grisaiaedit"
 				"tall"		"16"
 				"weight"	"600"
 				"additive"	"0"
@@ -42,7 +42,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"DejaVu Sans Condensed"
+				"name"		"grisaiaedit"
 				"tall"		"16"
 				"weight"	"600"
 				"additive"	"0"
@@ -54,7 +54,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"DejaVu Sans Condensed"
+				"name"		"grisaiaedit"
 				"tall"		"16"
 				"weight"	"400"
 				"additive"	"0"
@@ -66,7 +66,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"DejaVu Sans Condensed"
+				"name"		"grisaiaedit"
 				"tall"		"14"
 				"weight"	"600"
 				"additive"	"0"
@@ -78,7 +78,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"DejaVu Sans Condensed"
+				"name"		"grisaiaedit"
 				"tall"		"14"
 				"weight"	"400"
 				"additive"	"0"
@@ -90,7 +90,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"DejaVu Sans Condensed"
+				"name"		"grisaiaedit"
 				"tall"		"12"
 				"weight"	"600"
 				"additive"	"0"
@@ -102,7 +102,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"DejaVu Sans Condensed"
+				"name"		"grisaiaedit"
 				"tall"		"8"
 				"weight"	"400"
 				"additive"	"0"
@@ -114,7 +114,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"DejaVu Sans Condensed"
+				"name"			"grisaiaedit"
 				"tall"			"12"
 				"weight"		"400"
 				"additive"		"0"

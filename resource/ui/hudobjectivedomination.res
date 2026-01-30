@@ -466,6 +466,7 @@
 		"if_generic_4team"
 		{
 			"visible"		"1"
+			"xpos"			"c12"
 		}
 	}
 

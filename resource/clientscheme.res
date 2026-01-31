@@ -12,7 +12,6 @@
 #base "../../../cfg/technohud/th_font.txt"
 #base "ui/customizations/th_fontshowcase.res"
 #base "cs/th_fontpaths.res"
-#base "cs/customfontfiles.res"
 #base "cs/th_fonts.res"
 
 //====================================================

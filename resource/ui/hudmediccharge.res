@@ -1,56 +1,43 @@
-//TODO: either m0rehud joke minmode or something small and centered kbnhud/m0re minmode inspired?
-"Resource/UI/HudMedicCharge.res" // FILE FROM m0rehud, credits to Hypnotize
-{
-	//==================================================================================================================================================
-	// UBER ANCHOR
-	// Moves all the uber elements at the same time
-	//==================================================================================================================================================
+"Resource/UI/HudMedicCharge.res"
+{	
 	"UberAnchor"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"UberAnchor"
 		"xpos"										"c150"
-		"ypos"										"c95"
+		"ypos"										"c95" //c95, ill figure out how to fix uber percentage later
 		"xpos_minmode"								"c95"
-		"ypos_minmode"								"c3"
+		"ypos_minmode"								"c18"	//c18, refer to above
 		"zpos"										"0"
 		"wide"										"2"
 		"tall"										"80"
 		"visible"									"0"
 		"enabled"									"1"
 		"alpha"										"0"
-		
 	}
-
-	//==================================================================================================================================================
-	// UNDER CROSSHAIR SMALL UBER PERCENTAGE
-	//==================================================================================================================================================
+	"Background"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"Background"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"
+		"wide"			"130"
+		"tall"			"65"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			"../hud/medic_charge_blue_bg"
+		"scaleImage"	"1"	
+		"teambg_2"		"../hud/medic_charge_red_bg"
+		"teambg_3"		"../hud/medic_charge_blue_bg"		
+		"teambg_4"		"../hud/medic_charge_green_bg"
+		"teambg_5"		"../hud/medic_charge_yellow_bg"			
+	}
+	
 	"ChargeLabel"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"ChargeLabel"
-		"xpos"										"cs-0.5"
-		"ypos"										"c9"
-		"zpos"										"2"
-		"wide"										"100"
-		"tall"										"20"
-		"visible"									"0"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-		"labelText"									"#TF_UberchargeMinHUD"
-		"textAlignment"								"center"
-		"font"										"HudFont18Shadow"
-		"fgcolor"									"0 255 255 255" // eye-catching color
-
-	}
-
-	//==================================================================================================================================================
-	// MAIN UBER PERCENTAGE
-	//==================================================================================================================================================
-	"ChargeLabelBig"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"ChargeLabelBig"
 		"xpos"										"0"
 		"ypos"										"0"
 		"zpos"										"2"
@@ -64,213 +51,207 @@
 		"font"										"HudFont52Bold"
 		"font_minmode"								"HudFont36Bold"
 		"fgcolor"									"THUber"
+		"dropshadow_override"	"1"
 
 		"pin_to_sibling"							"UberAnchor"
 		"pin_corner_to_sibling"						"PIN_CENTER_TOP"
 		"pin_to_sibling_corner"						"PIN_CENTER_TOP"
 	}
-	"ChargeLabelBigShadow"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"ChargeLabelBigShadow"
-		"xpos"										"-1"
-		"ypos"										"-1"
-		"zpos"										"2"
-		"wide"										"200"
-		"tall"										"80"
-		"visible"									"1"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-		"labelText"									"#TF_UberchargeMinHUD"
-		"textAlignment"								"center"
-		"font"										"HudFont52Bold"
-		"font_minmode"								"HudFont36Bold"
-		"fgcolor"									"Black"
 
-		"pin_to_sibling"							"ChargeLabelBig"
-	}
-	"ChargeLabelBigShadowExtra"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"ChargeLabelBigShadowExtra"
-		"xpos"										"-1"
-		"ypos"										"-1"
-		"zpos"										"2"
-		"wide"										"200"
-		"tall"										"80"
-		"visible"									"1"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-		"labelText"									"#TF_UberchargeMinHUD"
-		"textAlignment"								"center"
-		"font"										"HudFont52Bold"
-		"font_minmode"								"HudFont36Bold"
-		"fgcolor"									"Black"
-		"alpha"										"0"
-
-		"pin_to_sibling"							"ChargeLabelBigShadow"
-	}
-
-	//==================================================================================================================================================
-	// UBER METER
-	//==================================================================================================================================================
-	"ChargeMeter"
-	{
-		"ControlName"								"ContinuousProgressBar"
-		"fieldName"									"ChargeMeter"
-		"xpos"										"0"
-		"ypos"										"rs1"
-		"zpos"										"2"
-		"wide"										"f0"
-		"tall"										"4"
-		"visible"									"1"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-		"fgcolor_override"							"THUber"
-	}
-
-	//==================================================================================================================================================
-	// VACCINATOR CHARGES
-	//==================================================================================================================================================
 	"IndividualChargesLabel"
 	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"IndividualChargesLabel"
-		"xpos"										"0"
-		"ypos"										"0"
-		"zpos"										"3"
-		"wide"										"100"
-		"tall"										"20"
-		"visible"									"1"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-		"labelText"									"#TF_IndividualUberchargesMinHUD"
-		"textAlignment"								"center"
-		"fgcolor"									"THUber" // mostly to focus attention on charge number instead of percentage
-		"font"										"HudFont18Shadow"
+		"ControlName"	"CExLabel"
+		"fieldName"		"IndividualChargesLabel"
+		"xpos"			"30"
+		"xpos_minmode"			"40"
+		"ypos"			"24"
+		"ypos_minmode"			"11"
+		"zpos"			"2"
+		"wide"			"90"
+		"tall"			"15"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"#TF_IndividualUbercharges"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"font"			"HudFontSmallest"
+	}
+	
+	"ChargeMeter"
+	{	
+		"ControlName"	"ContinuousProgressBar"
+		"fieldName"		"ChargeMeter"
+		"font"			"Default"
+		"xpos"			"30"
+		"ypos"			"38"
+		"zpos"			"2"
+		"wide"			"86"
+		"tall"			"8"				
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"Left"
+		"dulltext"		"0"
+		"brighttext"	"0"
+	}		
 
-		"pin_to_sibling"							"ChargeLabel"
+"ChargeMeter1"
+	{	
+		"ControlName"	"ContinuousProgressBar"
+		"fieldName"		"ChargeMeter1"
+		"font"			"Default"
+		"xpos"			"30"
+		"xpos_minmode"			"10"
+		"ypos"			"38"
+		"ypos_minmode"			"23"
+		"zpos"			"2"
+		"wide"			"19"
+		"tall"			"8"				
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"Left"
+		"dulltext"		"0"
+		"brighttext"	"0"
 	}
-	"ChargeMeter1"
-	{
-		"ControlName"								"ContinuousProgressBar"
-		"fieldName"									"ChargeMeter1"
-		"xpos"										"c-69"
-		"ypos"										"r88"
-		"zpos"										"2"
-		"wide"										"34"
-		"tall"										"2"
-		"visible"									"1"
-		"enabled"									"1"
-	}
+
 	"ChargeMeter2"
-	{
-		"ControlName"								"ContinuousProgressBar"
-		"fieldName"									"ChargeMeter2"
-		"xpos"										"1"
-		"ypos"										"0"
-		"zpos"										"2"
-		"wide"										"34"
-		"tall"										"2"
-		"visible"									"1"
-		"enabled"									"1"
-
-		"pin_to_sibling"							"ChargeMeter1"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	{	
+		"ControlName"	"ContinuousProgressBar"
+		"fieldName"		"ChargeMeter2"
+		"font"			"Default"
+		"xpos"			"52"
+		"xpos_minmode"			"32"
+		"ypos"			"38"
+		"ypos_minmode"			"23"
+		"zpos"			"2"
+		"wide"			"19"
+		"tall"			"8"				
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"Left"
+		"dulltext"		"0"
+		"brighttext"	"0"
 	}
+
 	"ChargeMeter3"
-	{
-		"ControlName"								"ContinuousProgressBar"
-		"fieldName"									"ChargeMeter3"
-		"xpos"										"1"
-		"ypos"										"0"
-		"zpos"										"2"
-		"wide"										"34"
-		"tall"										"2"
-		"visible"									"1"
-		"enabled"									"1"
-
-		"pin_to_sibling"							"ChargeMeter2"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	{	
+		"ControlName"	"ContinuousProgressBar"
+		"fieldName"		"ChargeMeter3"
+		"font"			"Default"
+		"xpos"			"74"
+		"xpos_minmode"			"54"
+		"ypos"			"38"
+		"ypos_minmode"			"23"
+		"zpos"			"2"
+		"wide"			"19"
+		"tall"			"8"				
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"Left"
+		"dulltext"		"0"
+		"brighttext"	"0"
 	}
+
 	"ChargeMeter4"
-	{
-		"ControlName"								"ContinuousProgressBar"
-		"fieldName"									"ChargeMeter4"
-		"xpos"										"1"
-		"ypos"										"0"
-		"zpos"										"2"
-		"wide"										"35"
-		"tall"										"2"
-		"visible"									"1"
-		"enabled"									"1"
-
-		"pin_to_sibling"							"ChargeMeter3"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	{	
+		"ControlName"	"ContinuousProgressBar"
+		"fieldName"		"ChargeMeter4"
+		"font"			"Default"
+		"xpos"			"96"
+		"xpos_minmode"			"76"
+		"ypos"			"38"
+		"ypos_minmode"			"23"
+		"zpos"			"2"
+		"wide"			"19"
+		"tall"			"8"				
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"Left"
+		"dulltext"		"0"
+		"brighttext"	"0"
 	}
-
-	//==================================================================================================================================================
-	// VACCINATOR RESIST ICON
-	//==================================================================================================================================================
-	"ResistIconAnchor"
-	{
-		"ControlName"								"EditablePanel"
-		"fieldName"									"ResistIconAnchor"
-		"xpos"										"cs-0.5"
-		"ypos"										"c32"
-		"wide"										"0"
-		"tall"										"80"
-		"visible"									"1"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-	}
+	
 	"ResistIcon"
 	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"ResistIcon"
-		"xpos"										"0"
-		"ypos"										"0"
-		"wide"										"24"
-		"tall"										"24"
-		"visible"									"1"
-		"enabled"									"1"
-		"image"										"../HUD/defense_buff_bullet_blue"
-		"scaleImage"								"1"
-
-		"pin_to_sibling"							"ResistIconAnchor"
-		"pin_corner_to_sibling"						"PIN_CENTER_TOP"
-		"pin_to_sibling_corner"						"PIN_CENTER_TOP"
+		"ControlName"	"ImagePanel"
+		"fieldName"		"ResistIcon"
+		"xpos"			"0"
+		"ypos"			"-25"
+		"wide"			"36"
+		"tall"			"36"
+		"visible"		"1"
+		"visible_minmode"		"0"
+		"enabled"		"1"
+		"image"			"../HUD/defense_buff_bullet_blue"
+		"scaleImage"	"1"	
 	}
-
-
-
-	//==================================================================================================================================================
-	// REMOVED ELEMENTS
-	//==================================================================================================================================================
-
-	"Background"
-	{
-		"ControlName"								"CTFImagePanel"
-		"fieldName"									"Background"
-		"xpos"										"9999"
-		"ypos"										"9999"
-		"wide"										"0"
-		"tall"										"0"
-		"visible"									"0"
-		"enabled"									"0"
-	}
+	
 	"HealthClusterIcon"
 	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"HealthClusterIcon"
-		"xpos"										"9999"
-		"ypos"										"9999"
-		"wide"										"0"
-		"tall"										"0"
-		"visible"									"0"
-		"enabled"									"0"
+		"ControlName"	"ImagePanel"
+		"fieldName"		"HealthClusterIcon"
+		"xpos"			"2"
+		"ypos"			"14"
+		"wide"			"o1"
+		"tall"			"36"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			"resource/svgs/medic/ico_health_cluster.svg"
+		"scaleImage"	"1"
+	}
+	
+	"InvulnClusterIcon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"InvulnClusterIcon"
+		"xpos"			"2"
+		"ypos"			"14"
+		"wide"			"o1"
+		"tall"			"36"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			"resource/svgs/medic/ico_health_cluster_invuln.svg"
+		"scaleImage"	"1"
+	}
+	
+	"KritzClusterIcon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"KritzClusterIcon"
+		"xpos"			"2"
+		"ypos"			"14"
+		"wide"			"o1"
+		"tall"			"36"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			"resource/svgs/medic/ico_health_cluster_kritz.svg"
+		"scaleImage"	"1"
+	}
+
+	"NaderClusterIcon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"NaderClusterIcon"
+		"xpos"			"2"
+		"ypos"			"14"
+		"wide"			"o1"
+		"tall"			"36"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			"resource/svgs/medic/ico_health_cluster_bubble.svg"
+		"scaleImage"	"1"
 	}
 }

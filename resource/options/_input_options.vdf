@@ -1,0 +1,162 @@
+"Options"
+{
+	"Groups"
+	{
+		"Input"
+		{
+			//"GamepadCategory"
+			//{
+			//	"datatype"	"heading"
+			//	"description" "#TF2c_OptionCategory_Joystick"
+			//	
+			//	"dependants"
+			//	{
+			//		"GamepadEnable"            "1"
+			//		"ReverseJoystick"          "1"
+			//		"Southpaw"                 "1"
+			//		"HorizontalSensitivity"    "1"
+			//		"VerticalSensitivity"      "1"
+			//	}
+			//}
+			//
+			//"GamepadEnable"
+			//{
+			//	"datatype"		"check"
+			//	"description"	"#TF2c_EnableGamepad"
+			//	"convar"		"joystick"
+			//	
+			//	"dependants"
+			//	{
+			//		"ReverseJoystick"          "1"
+			//		"Southpaw"                 "1"
+			//		"HorizontalSensitivity"    "1"
+			//		"VerticalSensitivity"      "1"
+			//	}
+			//}
+			//
+			//"ReverseJoystick"
+			//{
+			//	"datatype"		"check"
+			//	"description"	"#GameUI_ReverseJoystick"
+			//	"convar"		"joy_inverty"
+			//}
+			//
+			//"Southpaw"
+			//{
+			//	"datatype"		"check"
+			//	"description"	"#GameUI_JoystickSouthpaw"
+			//	"convar"		"joy_movement_stick"
+			//}
+			//
+			//"HorizontalSensitivity"
+			//{
+			//	"datatype"		"slider"
+			//	"description"	"#GameUI_JoystickLookSpeedYaw"
+			//	"min"			"-0.5f"
+			//	"max"			"-7.0f"
+			//	"convar"		"joy_yawsensitivity"
+			//}
+			//
+			//"VerticalSensitivity"
+			//{
+			//	"datatype"		"slider"
+			//	"description"	"#GameUI_JoystickLookSpeedPitch"
+			//	"min"			"0.5f"
+			//	"max"			"7.0f"
+			//	"convar"		"joy_pitchsensitivity"
+			//}
+		
+			"MouseCategory"
+			{
+				"datatype"	"heading"
+				"description" "#TF2c_OptionCategory_Mouse"
+				
+				"dependants"
+				{
+					"RawInput"                  "1"
+					"MouseSensitivity"          "1"
+					"MouseSmoothing"            "1"
+					"MouseAcceleration"         "1"
+					"MouseAccelerationEnable"   "1"
+				}
+			}
+		
+			//"SteamInput"
+			//{
+			//}
+			
+			// making "m_pitch" a CHECK is kinda not very good
+			// Because m_pitch is a float...
+			// Which controls how quick your mouse moves in certain directions
+			// if anything, m_pitch and m_yaw should be sliders from -x to x
+			// disabling it for now because its making people's sensitivity wacky
+			//"ReverseYAxis"
+			//{
+			//	"datatype"		"check"
+			//	"description"	"#GameUI_ReverseMouse"
+			//	"convar"		"m_pitch"
+			//}
+			
+			"RawInput"
+			{
+				"datatype"		"check"
+				"description"	"#TF2c_MouseRawInput"
+				"convar"		"m_rawinput"
+			}
+
+			"MouseSensitivity"
+			{
+				"datatype"		"slider"
+				"description"	"#TF2c_MouseSensitivity"
+				"min"			"1"
+				"max"			"20"
+				"convar"		"sensitivity"
+			}
+			
+			"MouseSmoothing"
+			{
+				"datatype"		"check"
+				"description"	"#TF2c_MouseSmoothing"
+				"convar"		"m_filter"
+			}
+			
+			"MouseAccelerationEnable"
+			{
+				"datatype"		"check"
+				"description"	"#TF2c_MouseAcceleration"
+				"convar"		"m_customaccel"
+				"dependants"
+				{
+					"MouseAcceleration"	"1"
+				}
+			}
+			
+			"MouseAcceleration"
+			{
+				"datatype"		"slider"
+				"description"	"#TF2c_MouseAccelerationStrength"
+				"min"			"1"
+				"max"			"4"
+				"convar"		"m_customaccel_exponent"
+			}
+		
+			"KeyboardCategory"
+			{
+				"datatype"	"heading"
+				"description" "#TF2c_OptionCategory_Keyboard"
+				"dependants"
+				{
+					"KeyboardBinds"	"1"
+				}
+			}
+		
+			"KeyboardBinds"
+			{
+				"datatype"		"button"
+				"description"	"#GameUI_UseDefaults"
+				"command"		"reset_key_bindings"
+				"buttontext"	"#TF2c_UseDefaultsButton"
+			}
+		}
+	}
+}

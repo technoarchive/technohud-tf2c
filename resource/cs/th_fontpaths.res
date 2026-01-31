@@ -6,7 +6,7 @@
 		"2" "resource/tfd.ttf"
 		"3"
 		{
-			"font" "resource/TF2.ttf"
+			"font" "resource/tf2.ttf"
 			"name" "TF2"
 			"russian"
 			{
@@ -19,7 +19,7 @@
 		}
 		"4"
 		{
-			"font" "resource/TF2Secondary.ttf"
+			"font" "resource/tf2secondary.ttf"
 			"name" "TF2 Secondary"
 			"russian"
 			{
@@ -32,7 +32,7 @@
 		}
 		"5"
 		{
-			"font" "resource/TF2Professor.ttf"
+			"font" "resource/tf2professor.ttf"
 			"name" "TF2 Professor"
 			"russian"
 			{
@@ -45,7 +45,7 @@
 		}
 		"6"
 		{
-			"font" "resource/TF2Build.ttf"
+			"font" "resource/tf2build.ttf"
 			"name" "TF2 Build"
 			"russian"
 			{
@@ -123,48 +123,68 @@
 		}
 		"8"
 		{
-			"font" "resource/fonts/Luxi.ttf"
-			"name" "Luxi Mono Regular"
+			"font" 	"resource/fonts/fonts_custom/luxi.ttf"
+			"name" 	"luxi_mono_regular"
 		}
 		"9"
 		{
-			"font"	"resource/fonts/TF2 Icons.ttf"
-			"name"	"TF2 Icons"
+			"font"	"resource/fonts/tf2icons.ttf"
+			"name"	"tf2icons"
 		}
         "10"
         {
             "font"  "resource/fonts/grisaia.ttf"
-            "name"	"GrisaiaEdit"
+            "name"	"grisaiaedit"
         }
         "11"
         {
-            "font"  "resource/fonts/renko Bold.ttf"
-            "name"	"renko Bold"
+            "font"  "resource/fonts/fonts_custom/renko_bold.ttf"
+            "name"	"renko_bold"
         }
 		"12"
 		{
-			"font"	"resource/fonts/xolonium.otf"
-			"name"	"Xolonium GPL"
+			"font"	"resource/fonts/fonts_custom/xolonium.ttf"
+			"name"	"xolonium_gpl"
 		}
 		"13"
 		{
-			"font"	"resource/fonts/surface.otf"
-			"name"	"Surface-Medium"
+			"font"	"resource/fonts/fonts_custom/surface.ttf"
+			"name"	"surface_medium"
 		}
 		"14"
 		{
-			"font"	"resource/fonts/nukamiso.ttf"
+			"font"	"resource/fonts/fonts_custom/nukamiso.ttf"
 			"name"	"nukamiso"
 		}
 		"15"
 		{
-			"font" "resource/fonts/catamaran.ttf"
-			"name" "Catamaran SemiBold"
+			"font" 	"resource/fonts/fonts_custom/catamaran.ttf"
+			"name"	"catamaran_semibold"
+		}
+		"16"
+		{
+			"font" 	"resource/fonts/fonts_custom/din_medium.ttf"
+			"name" 	"din_medium"
+		}
+		"17"
+		{
+			"font" 	"resource/fonts/fonts_custom/barlow.ttf"
+			"name" 	"barlow_semibold"
+		}
+		"18"
+		{
+			"font" 	"resource/fonts/fonts_custom/romudiane.ttf"
+			"name" 	"romudiane"
+		}
+		"19"
+		{
+			"font"	"resource/fonts/fonts_custom/gilroy_medium.ttf"
+			"name"	"gilroy_medium"
 		}
 		"500"
 		{
 			"font"	"resource/fonts/blocks.ttf"
-			"name"	"Blocks"
+			"name"	"blocks"
 		}
 	}
 }

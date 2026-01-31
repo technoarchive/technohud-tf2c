@@ -1,0 +1,273 @@
+"Options"
+{
+	"Groups"
+	{
+		"Audio"
+		{
+			"VolumeCategory"
+			{
+				"datatype"	"heading"
+				"description" "#TF2c_OptionCategory_Volume"
+				
+				"dependants"
+				{
+					"MuteUnfocused"	"1"
+					"MasterVolume"	"1"
+					"MusicVolume"	"1"
+					"SoundQuality"	"1"
+				}
+			}
+		
+			"MuteUnfocused"
+			{
+				"dataType"  "check"
+				"convar"	"snd_mute_losefocus"
+				"description"	"#TF2c_MuteUnfocused"
+			}
+		
+			"MasterVolume"
+			{
+				// use existing description on how to display data
+				"dataType"  "slider"
+				"description"	"#GameUI_SoundEffectVolume"
+				// range
+				"min"       "0.0"
+				// sick fucks going over 110
+				"max"       "1.0"
+				"precision"		"0.01"
+				// map a specific convar to a choice
+				"convar"    "volume"
+			}
+			
+			"MusicVolume"
+			{
+				// use existing description on how to display data
+				"dataType"  "slider"
+				"description"	"#GameUI_MusicVolume"
+				// range
+				"min"       "0.0"
+				"max"       "1.0"
+				"precision"		"0.01"
+				// map a specific convar to a choice
+				"convar"    "snd_musicvolume"
+			}
+			
+			"SoundQuality"
+			{
+				"description" "#GameUI_SoundQuality"
+				
+				"dataType"  "list"
+				"list"
+				{
+					"0"     "#GameUI_CrosshairNone" // "Default"
+					"1"     "#gameui_low"
+					"2"     "#gameui_medium"
+					"3"     "#gameui_high"
+				}
+				
+				"convars"
+				{
+					"dsp_slow_cpu"
+					{
+						"0"	"0"
+						"1" "1"
+						"2" "0"
+						"3" "0"
+					}
+					"snd_pitchquality"
+					{
+						"0"	"1"
+						"1" "0"
+						"2" "0"
+						"3" "1"
+					}
+					"snd_spatialize_roundrobin"
+					{
+						"0"	"0"
+						"1" "3"
+						"2" "0"
+						"3" "0"
+					}
+					"snd_disable_mixer_duck"
+					{
+						"0" "0"
+						"1" "1"
+						"2" "0"
+						"3" "0"
+					}
+					"snd_defer_trace"
+					{
+						"0"	"1"
+						"1" "1"
+						"2" "1"
+						"3" "0"
+					}
+				}
+			}
+			
+			"DeviceCategory"
+			{
+				"datatype"	"heading"
+				"description" "#TF2c_OptionCategory_Device"
+				
+				"dependants"
+				{
+					"SpeakerSetup"	"1"
+				}
+			}
+			
+			"SpeakerSetup"
+			{
+				"dataType"  "list"
+				"description"	"#GameUI_SpeakerConfiguration"
+				
+				"list"
+				{
+					"0" "#GameUI_Headphones"
+					"1" "#GameUI_2Speakers"
+					"2" "#GameUI_4Speakers"
+					"3" "#GameUI_5Speakers"
+					"4" "#GameUI_7Speakers"
+				}
+				
+				"convars"
+				{
+					"Snd_Surround_Speakers"
+					{
+						"0"	"0"
+						"1"	"2"
+						"2"	"4"
+						"3"	"5"
+						"4"	"7"
+					}
+					
+					"dsp_enhance_stereo"
+					{
+						"0"	"1"
+						"1"	"0"
+						"2"	"0"
+						"3"	"0"
+						"4"	"0"
+					}
+				}
+			}
+			
+			"LanguageCategory"
+			{
+				"dataType" "heading"
+				"description" "#TF2c_OptionCategory_Language"
+				
+				"dependants"
+				{
+					"Language"	"1"
+					"CloseCaptions"	"1"
+				}
+			}
+			
+			"Language"
+			{
+				"provider" "Language"
+				"description" "#GAMEUI_AudioSpokenLanguage"
+				"restart_required"	"1"
+			}
+			
+			"CloseCaptions"
+			{
+				"dataType"  "list"
+				
+				"description" "#GameUI_Captioning"
+				
+				"list"
+				{
+					"0" "#GameUI_NoClosedCaptions"
+					"1" "#GameUI_SubtitlesAndSoundEffects"
+					"2" "#GameUI_Subtitles"
+				}
+				
+				"convars"
+				{
+					"cc_subtitles"
+					{
+						"0"	"0:1"
+						"1"	"0"
+						"2"	"1"
+					}
+					
+					"closecaption"
+					{
+						"0"	"0"
+						"1"	"1"
+						"2"	"1"
+					}
+				}
+			}
+			
+			"VoiceCategory"
+			{
+				"datatype"	"heading"
+				"description" "#TF2c_OptionCategory_Voice"
+				
+				"dependants"
+				{
+					"VoiceEnabled"			"1"
+					"VoiceProximityLocal"	"1"
+					"VoiceSendVolume"	 	"1"
+					"VoiceRecieveVolume"	"1"
+					"BoostMicGain" 		 	"1"
+					"MicTest" 			 	"1"
+				}
+			}
+			
+			"VoiceEnabled"
+			{
+				"dataType"  "check"
+				"description"	"#GameUI_EnableVoice"
+				"convar"	"voice_enable"
+				// controls that are enabled/disabled by this control
+				"dependants"
+				{
+					"VoiceProximityLocal"	"1"
+					"VoiceSendVolume"	 "1"
+					"VoiceRecieveVolume" "1"
+					"BoostMicGain" 		 "1"
+					"MicTest" 			 "1"
+				}
+			}
+			
+			"VoiceProximityLocal"
+			{
+				"dataType"  "check"
+				"description"	"#TF2c_Option_Proximity_Voice_Local"
+				"convar"	"tf2c_proximity_voice"
+			}
+			
+			"VoiceRecieveVolume"
+			{
+				"dataType"  "slider"
+				"description"	"#GameUI_VoiceReceiveVolume"
+				"min"       "0.0"
+				"max"       "1.0"
+				"precision"		"0.01"
+				"convar"    "voice_scale"
+			}
+			
+			"VoiceSendVolume"
+			{
+				"provider"  "MicSendVolume"
+				"description"	"#GameUI_MicrophoneVolume"
+			}
+			
+			"BoostMicGain"
+			{
+				"provider"  "MicBoost"
+				"description"	"#GameUI_BoostMicrophone"
+			}
+			
+			"MicTest"
+			{
+				"provider"  "MicTest"
+				"description"	""
+			}
+		}
+	}
+}

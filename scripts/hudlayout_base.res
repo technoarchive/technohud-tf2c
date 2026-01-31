@@ -1,4 +1,4 @@
-"Resource/HudLayout.res"
+"resource/hudlayout.res"
 {
 	HudPlayerStatus
 	{
@@ -20,6 +20,12 @@
 		"ypos"	"0"	 // r125
 		"wide"	"f0"
 		"tall"	"f0"
+
+		"x_offset_mediccharge"	"15"
+		"x_offset_mediccharge_mimode"	"0"
+		"y_offset_mediccharge"	"-40"
+		"y_offset_mediccharge_minmode"	"-27"
+
 	}
 
 	HudObjectiveStatus
@@ -44,10 +50,8 @@
 		"tall"	"160"
 
 		"blue_active_xpos"			"16"
-		"blue_active_xpos_minmode"	"55"
 
 		"red_active_xpos"			"106"
-		"red_active_xpos_minmode"	"105"
 	}
 
 	HudItemEffectMeter
@@ -80,23 +84,24 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"cs-0.5"	
-		"ypos"			"r115"	
+		"ypos"			"r95"
+		"ypos_minmode"	"r170"
 		"zpos"			"1"			// draw in front of ammo
 		"wide"			"120"
 		"tall"			"8"
+
+		"wide_minmode"	"80"
+		"tall_minmode"	"4"
 		"MeterFG"		"FullWhite"
 		"MeterBG"		"ItemMeterBG"
 	}
 
 	HudDemomanPipes
 	{
-		"fieldName"		"HudDemomanPipes"
-		"visible"		"1"
-		"enabled"		"1"
-		"xpos"			"cs-0.5"	
-		"ypos"			"r105"	
-		"wide"			"120"
-		"tall"			"50"
+		"xpos"			"0"	
+		"ypos"			"0"	
+		"wide"			"f0"
+		"tall"			"f0"
 		"MeterFG"		"FullWhite"
 		"MeterBG"		"ItemMeterBG"
 	}
@@ -106,12 +111,12 @@
 		"fieldName"		"HudBowCharge"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r80"	
-		"ypos"			"r21"	
+		"xpos"			"9999"	
+		"ypos"			"9999"	
 		"zpos"			"1"			// draw in front of ammo
-		"wide"			"60"
-		"wide_minmode"	"50"
-		"tall"			"8"
+		"wide"			"0"
+		"wide_minmode"	"0"
+		"tall"			"0"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}
@@ -178,7 +183,7 @@
 		"SelectionAlpha" "220"
 		"BoxColor" "0 0 0 220"
 		"SelectedBoxClor" "0 0 0 220"
-		"SelectionNumberFg"	"200 187 161 255"
+		"SelectionNumberFg"	"236 236 236 255"
 		"NumberFont" "HudFont15"
 	}
 
@@ -187,6 +192,7 @@
 		"fieldName"				"CHudAccountPanel"
 		"xpos"					"c-100"
 		"ypos"					"r125"
+		"ypos_minmode"			"c65"
 		"wide"					"116"
 		"tall"  				"f0"
 		"visible" 				"1"
@@ -358,12 +364,10 @@
 	{
 		"ControlName"		"CCurrencyStatusPanel"
 		"fieldName"			"CurrencyStatusPanel"
-		"xpos"				"c-169"
+		"xpos"				"c-120"
 		"ypos"				"r90"
 		"wide"				"100"
 		"tall"				"100"
-		"xpos_minmode"		"65"
-		"ypos_minmode"		"r88"
 		"visible" 			"0"
 		"enabled" 			"1"
 
@@ -518,7 +522,8 @@
 		"IconColor"		"255 255 255 255"
 		"LocalPlayerColor"	"Black"
 		"BaseBackgroundColor"	"TransparentBlack"		
-		"LocalBackgroundColor"	"255 255 255 220"	
+		"LocalBackgroundColor"	"255 255 255 220"
+
 	}
 
 	HudVehicle
@@ -721,7 +726,7 @@
 		"fieldName" "HudScopeCharge"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	 "c235" //default: 64, moves charge out of the way.
+		"xpos"	 "c64" //default: 64, moves charge out of the way.
 		"ypos"	 "c-64"
 		"wide"	 "64"
 		"tall"	 "128"
@@ -875,10 +880,10 @@
 		"fieldName"				"ArenaWinPanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-225"
-		"ypos"					"250"
+		"xpos"					"c-191"
+		"ypos"					"63"
 		"wide"					"450"
-		"tall"					"218"
+		"tall"					"430"
 	}
 
 	PVEWinPanel
@@ -982,7 +987,8 @@
 		"visible"					"1"
 		"enabled"					"1"
 		"xpos"						"c-125"
-		"ypos"						"c+15"
+		"ypos"						"c15"
+		"ypos_minmode"				"c75"
 		"wide"						"250"
 		"tall"						"195"
 		"PaintBackgroundType"		"0"
@@ -994,7 +1000,8 @@
 		"visible"					"1"
 		"enabled"					"1"
 		"xpos"						"c-125"
-		"ypos"						"c+15"
+		"ypos"						"c15"
+		"ypos_minmode"				"c75"
 		"wide"						"250"
 		"tall"						"195"
 		"PaintBackgroundType"		"0"
@@ -1006,7 +1013,8 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"c-125"
-		"ypos"			"c+15"
+		"ypos"			"c15"
+		"ypos_minmode"	"c75"
 		"wide"			"250"
 		"tall"			"195"
 		"PaintBackgroundType"	"0"
@@ -1019,8 +1027,9 @@
 		"enabled" 		"1"
 		"xpos"			"c-189"
 		"ypos"			"c-25"
+		"ypos_minmode"	"c30"
 		"wide"			"470"
-		"tall"			"200"	
+		"tall"			"200"
 		"PaintBackgroundType"	"0"
 	}
 
@@ -1033,7 +1042,7 @@
 		"ypos"					"65"
 		"ypos_lodef"			"75"
 		"wide"					"320"
-		"tall"					"100"
+		"tall"					"0"
 	}
 
 
@@ -1046,7 +1055,7 @@
 		"ypos"					"15"
 		"ypos_lodef"			"75"
 		"wide"					"320"
-		"tall"					"300"
+		"tall"					"0"
 	}
 
 	HudTeamSwitch
@@ -1378,6 +1387,7 @@
 		"enabled" 		"1"
 		"xpos"			"0"
 		"ypos"			"-15"
+		"ypos_minmode"	"0"
 		"zpos"			"20"
 		"wide"			"f0"
 		"tall"			"f0"
@@ -1480,4 +1490,3 @@
 		"alpha"					"100"
 	}
 }
-

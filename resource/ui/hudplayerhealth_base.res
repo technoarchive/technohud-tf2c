@@ -1,4 +1,4 @@
-"Resource/UI/HudPlayerHealth.res"
+"resource/ui/hudplayerhealth.res"
 {
 	// player health data, don't mess with this
 	"HudPlayerHealth"
@@ -24,7 +24,7 @@
 		"ypos"			"c113"
 		//minmode
 		"xpos_minmode"	"c-172"
-		"ypos_minmode"	"c23"
+		"ypos_minmode"	"c38"
 		"zpos"			"5"
 		"wide"			"150"
 		"tall"			"40"
@@ -58,19 +58,20 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthBonusImage"
-		"xpos"			"c-165"	
-		"ypos"			"c107"	
+		"xpos"			"c-165"
+		"ypos"			"c107"
 		"xpos_minmode"	"c-112"
-		"ypos_minmode"	"c29"
+		"ypos_minmode"	"c44"
 		"zpos"			"2"
-		"wide"			"55"	
+		"wide"			"55"
 		"tall"			"55"
-		"wide_minmode"	"31"	
-		"tall_minmode"	"31"			
+		"wide_minmode"	"31"
+		"tall_minmode"	"31"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"replay/thumbnails/overhealcolor/health_over_bg_green"
 		"scaleImage"	"1"
+		//* breaking?
 	}
 	"PlayerStatusMaxHealthValue" // max hp value, shows up above to the right,
 	{
@@ -671,7 +672,58 @@
 		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
 		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
 	}
-
+	// TF2CLASSIC
+	"PlayerStatusCivilianBuffHeal"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusCivilianBuffHeal"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"7"
+		"wide"			"30"
+		"tall"			"30"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			""
+		"fgcolor"		"TanDark"
+		"pin_to_sibling"							"PlayerStatusAnchor"
+		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
+		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
+	}
+	//"PlayerStatusCivilianBuffDamage"
+	//{
+	//	"ControlName"	"ImagePanel"
+	//	"fieldName"		"PlayerStatusCivilianBuffDamage"
+	//	"xpos"			"85"
+	//	"ypos"			"0"
+	//	"zpos"			"7"
+	//	"wide"			"31"
+	//	"tall"			"31"
+	//	"visible"		"1"
+	//	"enabled"		"1"
+	//	"scaleImage"	"1"	
+	//	"image"			""
+	//	"fgcolor"		"TanDark"
+	//}
+	"PlayerStatusCivilianBuffHaste"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusCivilianBuffHaste"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"7"
+		"wide"			"30"
+		"tall"			"30"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			""
+		"fgcolor"		"TanDark"
+		"pin_to_sibling"							"PlayerStatusAnchor"
+		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
+		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
+	}
 
 
 	//==================================================================================================================================================

@@ -71,7 +71,21 @@
 		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"5"
 	}
-
+	"MedalImage"
+	{	
+		"ControlName"	"ImagePanel"
+		"fieldName"		"MedalImage"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"1"
+		"wide"			"0"
+		"wide_minmode"	"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			"../hud/medal_tester_red"
+		"scaleImage"	"1"
+	}
 	"TargetNameLabel"
 	{
 		"ControlName"		"Label"

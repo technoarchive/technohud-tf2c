@@ -16,6 +16,7 @@ stuffcmds
 startupmenu
 
 //exec the entire customization (if this doesen't work, check for other valve.rc files!!!)
+//this doesnt work in tf2c atm lol rip gutted sixense
 exec th_customization.cfg
 
 //tf2c edition commands

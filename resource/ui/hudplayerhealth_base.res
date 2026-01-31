@@ -672,7 +672,58 @@
 		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
 		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
 	}
-
+	// TF2CLASSIC
+	"PlayerStatusCivilianBuffHeal"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusCivilianBuffHeal"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"7"
+		"wide"			"30"
+		"tall"			"30"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			""
+		"fgcolor"		"TanDark"
+		"pin_to_sibling"							"PlayerStatusAnchor"
+		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
+		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
+	}
+	//"PlayerStatusCivilianBuffDamage"
+	//{
+	//	"ControlName"	"ImagePanel"
+	//	"fieldName"		"PlayerStatusCivilianBuffDamage"
+	//	"xpos"			"85"
+	//	"ypos"			"0"
+	//	"zpos"			"7"
+	//	"wide"			"31"
+	//	"tall"			"31"
+	//	"visible"		"1"
+	//	"enabled"		"1"
+	//	"scaleImage"	"1"	
+	//	"image"			""
+	//	"fgcolor"		"TanDark"
+	//}
+	"PlayerStatusCivilianBuffHaste"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusCivilianBuffHaste"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"7"
+		"wide"			"30"
+		"tall"			"30"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			""
+		"fgcolor"		"TanDark"
+		"pin_to_sibling"							"PlayerStatusAnchor"
+		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
+		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
+	}
 
 
 	//==================================================================================================================================================

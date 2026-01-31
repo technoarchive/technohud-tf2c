@@ -1,4 +1,4 @@
-//TODO: move numbers closer to not obstruct killfeed
+//TODO: move numbers closer to not obstruct killfeed on 4team
 "Resource/UI/HudObjectiveDomination.res"
 {
 	"ObjectiveStatusDomination"
@@ -737,7 +737,7 @@
 		"wide_minmode"			"39"
 		"tall"			"22"
 		"tall_minmode"			"17"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"%yellowscore%"
 		"textAlignment"	"center"
@@ -751,13 +751,12 @@
 		{
 			"xpos"			"c72"
 		}
-		
+
 		if_4team
 		{
 			if_generic
 			{
-				"xpos"			"c92"
-				"xpos_minmode"	"c66"
+				"xpos"			"-1"
 				"wide"			"78"
 				"wide_minmode"			"54"
 			}

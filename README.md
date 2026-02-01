@@ -4,7 +4,7 @@
 
 ![technohud-banner-github](https://i.imgur.com/ZpJJDlp.png)
 
-## current state: usable, but very little work done on tf2c-specifics
+## current state: usable, but very little work done on tf2c-specifics (check todo list in issues for progress)
 
 a clean hud made (mostly) from scratch with darker neutral colors as a theme.
 

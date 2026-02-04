@@ -7,6 +7,10 @@
 	// ammo anchor
 	// this element can be used to move all the ammo elements at the same time
 	// by increasing the wide, the gap between clip and reserver will also increase
+	// and now, a rant:
+	// the ammo looks like shit because tf2c devs somehow broke duplicate hud elements as dropshadows ONLY on ammo...
+	// not on hp, not on demo stickies, not on ANYTHING else. just ammo. :)
+	// - just use dropshadow lol - an actual tf2c dev (it looks awful for something that used to work pre-steam btw)
 	//==================================================================================================================================================
 	"AmmoAnchor"
 	{

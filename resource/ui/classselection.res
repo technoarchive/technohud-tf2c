@@ -38,6 +38,11 @@
 		"src_corner_width"		"23"
 		"draw_corner_width"		"5"
 		"draw_corner_height" 	"5"
+
+		"if_special_classes"
+		{
+			"tall"		"196"
+		}
 	}
 
 	"teamname"
@@ -115,7 +120,10 @@
 		"Default"			"0"
 		"stayselectedonclick"	"1"
 		"selectonhover"			"0"
-
+		"if_special_classes"
+		{
+			"ypos"		"c80"
+		}
 	}
 
 	"Offense"
@@ -403,7 +411,41 @@
 		"stayselectedonclick"	"1"
 		"selectonhover"			"0"
 	}
+	"civilian"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"civilian"
+		"xpos"				"c-61"
+		"ypos"				"c48"
+		"zpos"				"8"
+		"wide"				"150"
+		"tall"				"12"
+		"visible"			"0"
+		"enabled"			"0"
+        "tabPosition"		"0"
+		"labelText"			"&0  Civ"
+		"textAlignment"		"west"
+		"Command"			"joinclass civilian"
+		"font"				"HudFont11Shadow"
+        "fgcolor"			"FullWhite"
+		"defaultFgColor_override"			"FullWhite"
+		"armedFgColor_override"				"255 255 255 255"
+		"depressedFgColor_override"			"255 255 0 255"
+        "paintbackground"   "0"
 
+		"keyboardinputenabled"	"0"
+		"Default"				"0"
+		"stayselectedonclick"	"1"
+		"selectonhover"			"0"
+
+		"if_special_classes"
+		{
+				"visible"				"1"
+				"enabled"				"1"
+				"stayselectedonclick"	"1"
+				"selectonhover"			"1"
+		}
+	}
 	"EditLoadoutButton"
 	{
 		"ControlName"	"CExButton"
@@ -425,6 +467,10 @@
 		"keyboardinputenabled"	"0"
 		"Default"			"0"
 
+		"if_special_classes"
+		{
+			"ypos"		"c110"
+		}
 	}
 	"EditLoadoutKeybind"
 	{
@@ -467,7 +513,10 @@
 
 		"keyboardinputenabled"	"0"
 		"Default"			"0"
-
+		"if_special_classes"
+		{
+			"ypos"		"c130"
+		}
 	}
 		"CancelKeybind"
 	{

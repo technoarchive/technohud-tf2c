@@ -63,19 +63,92 @@
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"disabledfgfgcolor2_override"		"Black"	
+		"disabledfgcolor2_override"				"White"
+		"disabledfgcolor2_override_minmode"		"Black"	
 		"font"					"HudFont6"
 	}
 	"ItemEffectMeterCount"
 	{
 		"ControlName"			"Label"
-		"fieldName"				"ItemEffectMeterCount"	
-		"visible"				"0"
-		"enabled"				"0"
+		"fieldName"				"ItemEffectMeterCount"
+		"xpos"					"0"
+		"ypos"					"-10"
+		"visible"				"1"
+		"enabled"				"1"
 		"labelText"				"%progresscount%"
 		"textAlignment"			"north"
 		"font"					"HudFontMedium"
 		"dropshadow"			"1"
 	}
-
+	"EmptyIcon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"EmptyIcon"
+		"xpos"			"40"
+		"ypos"			"10"
+		"zpos"			"1"
+		"wide"			"40"
+		"tall"			"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"resource/svgs/meters/ico_invis_inactive.svg"
+		"scaleImage"	"1"
+		
+		"drawcolor"		"ProgressBar.BgColor"
+		"dropshadow"	"0"
+	}
+	
+	"ChargingIcon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"ChargingIcon"
+		"xpos"			"40"
+		"ypos"			"10"
+		"zpos"			"1"
+		"wide"			"40"
+		"tall"			"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"resource/svgs/meters/ico_invis_inactive.svg"
+		"scaleImage"	"1"
+		
+		"drawcolor"		"ProgressBar.FgColor"
+		"dropshadow"	"1"
+	}
+	
+	"ActiveIcon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"ActiveIcon"
+		"xpos"			"40"
+		"ypos"			"10"
+		"zpos"			"1"
+		"wide"			"40"
+		"tall"			"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"resource/svgs/meters/ico_invis_active.svg"
+		"scaleImage"	"1"
+		
+		"drawcolor"		"ProgressBar.FgColor"
+		"dropshadow"	"1"
+	}
+	
+	"FullIcon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"FullIcon"
+		"xpos"			"40"
+		"ypos"			"10"
+		"zpos"			"1"
+		"wide"			"40"
+		"tall"			"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"resource/svgs/meters/ico_invis_inactive.svg"
+		"scaleImage"	"1"
+		
+		"drawcolor"		"ProgressBar.FgColor"
+		"dropshadow"	"1"
+	}
 }
